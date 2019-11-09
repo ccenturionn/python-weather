@@ -1,4 +1,4 @@
-import requests, json
+import requests, json, os
 
 api_key = "79fb1e0e0654b11e1319112ffe57fba4"
 
@@ -22,9 +22,10 @@ if x["cod"] != "404":
 
 	weather_description = z[0]["description"]
 
-	print("Temp:", current_temp)
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print("Temp:", current_temp, "degrees C")
 	print("Pressure:", current_pressure)
-	print("Humidity:", current_humidity)
-	print("Desc:", weather_description)
+	print("Humidity:", current_humidity, "percent")
+	print("Description:", weather_description)
 else:
 	print("City not found.")
