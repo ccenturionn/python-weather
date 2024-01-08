@@ -3,7 +3,7 @@
 import requests, json, os
 from datetime import date
 
-api_key = "79fb1e0e0654b11e1319112ffe57fba4"
+api_key = ""
 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
